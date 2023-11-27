@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+body, html {
+    background-color: black;
+    color: #fff;
+    padding: 1%;
+    height: 95vh;
+}
+
+input {
+    color: #000;
+}
+
+.task__container {
+    @apply 
+        grid 
+        justify-center;
+    /* height: 100vh; */
+}
+
+.task__title {
+    @apply 
+        text-center
+        font-bold
+        text-3xl
+        mb-5;
+}
+
+.task__form {
+    @apply 
+        grid
+        gap-5
+        mb-10;
+}
+
+.task__input {
+    @apply 
+        p-1;
+}
+
+.task__btn {
+    @apply 
+        bg-sky-700
+        p-2
+        cursor-pointer
+        rounded-md;
+    transition: .3s;
+}
+
+.task__btn:hover {
+    @apply 
+        bg-sky-900;
+}
+
+.task__btn-delete {
+    @apply 
+        bg-red-700
+        px-2
+        py-1
+        cursor-pointer
+        rounded-md;
+}
+
+.task__btn-delete:hover {
+    @apply 
+        bg-red-900
+}
+
+.task__btn-update {
+    @apply
+        bg-lime-600
+        px-2
+        py-1
+        cursor-pointer
+        rounded-md;
+}
+
+.task__btn-update:hover {
+    @apply 
+        bg-lime-800
+}
+
+.task__list {
+    @apply 
+        flex
+        flex-col
+        gap-5;
+}
+
+.task__items {
+    @apply
+        flex
+        justify-between
+        gap-5;
+}
+
+.task__items-list {
+    @apply 
+        flex
+        items-center
+        gap-5;
+}
+
+.task__buttons {
+    @apply
+        flex
+        gap-3;
+}
+
+.task__buttons button:hover {
+    transition: .3s;
+    transform: translateY(-.3rem);
+}
+
+.footer {
+    @apply 
+        text-center
+        p-5
+        mt-72
+}
