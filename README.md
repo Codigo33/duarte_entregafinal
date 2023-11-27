@@ -1,6 +1,6 @@
 # Task Manager | React + Vite
 
-- [Site Web][https://react-task-manager1.netlify.app]
+- https://react-task-manager1.netlify.app
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
